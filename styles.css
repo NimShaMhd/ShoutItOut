@@ -15,7 +15,7 @@ body{
     margin: 50px auto;
     overflow:auto;
     width:60%;
-    min-height: 400px;
+    min-height: 550px;
 }
 header h1{
     color:#f4f4f4;
@@ -29,7 +29,7 @@ header h1{
 #msgbox{
     width:90%;
     background: #f4f4f4;
-    height: 400px;
+    height: 300px;
     margin:20px auto;
     overflow:auto;
 }
@@ -42,17 +42,37 @@ header h1{
     color: #aaaaaa;
     
 }
-#input{
-    width:45%;
-    min-height: 45px;
-    margin: auto;
-    padding:0;
-    margin-left: 25px;
+#msgform{
+    width:90%;
+    min-height: 80px;
+    margin:auto;
+    padding:0px; 
 }
-.input input[type="text"]{
+
+#msgform input[type="text"]{
     height: 25px;
-    width:48%;
-    padding: 3px;
+    width: 48%;
+    padding:3px;
     margin-bottom: 20px;
     border: #666666 solid 1px;
+}
+.shout_btn{
+    padding:5px;
+    margin-bottom: 30px;
+    width:100%;
+    margin:10px auto;
+    height: 40px;
+    font-size: 15px;
+}
+@media only screen and (max-width:1000px){
+    #msgform input[type="text"]{
+        width: 98%;
+    }
+}
+.error{
+    font-style: italic;
+    color:red;
+    font-family: monospace;
+    padding: 5px;
+    margin-bottom: 20px;
 }
