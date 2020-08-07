@@ -68,6 +68,9 @@ header h1{
     #msgform input[type="text"]{
         width: 98%;
     }
+    header h1{
+        font-size: 30px;
+    }
 }
 .error{
     font-style: italic;
